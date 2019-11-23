@@ -1,0 +1,27 @@
+# wipro
+Is palindrome possible
+Main()
+{
+
+       int[] d =new int[30];
+        for(int i=0;i<=20;i++)
+        d[i]=0;
+        while(input1>0)
+        {
+            d[input1%10]++;
+            input1=input1/10;
+        }
+         int odd=0;
+	
+         for(int i=0;i<10;i++)
+         {
+             if(d[i]%2!=0)
+             odd++;
+             if(odd>1)
+             return 1;
+         }
+         return 2;
+        
+  }
+
+
