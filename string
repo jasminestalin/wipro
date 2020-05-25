@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class strfreq {
+	public static void main(String[] args) {
+		Map<Character,Integer> map =new HashMap<Character,Integer>();
+		StringBuffer  str = new StringBuffer();
+		ArrayList<Character> chars = new ArrayList<Character>();
+		String str1="jasminefgwetvv";
+		for (char c : str1.toCharArray()) {
+		  chars.add(c);
+		}
+		System.out.println(chars);
+		for (char c: chars)
+		{
+			map.put(c,Collections.frequency(chars,c));
+			
+		}
+			
+		System.out.println(map);
+	}
+}
