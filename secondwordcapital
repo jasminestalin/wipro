@@ -1,0 +1,23 @@
+int i=0,count=0;
+		char[] arr1=new char[40];
+		int len=input1.length();
+		for(i=0;i<input1.length();i++)
+		{
+			if(input1.charAt(i)==' ')break;
+
+		}
+		for(int j=i;j<input1.length();j++)
+		{
+			if(input1.charAt(j+1)!=' ') arr1[count++]=input1.charAt(j+1);
+			else
+			break;
+
+		}
+		String str5 =new String(arr1);
+		str5=str5.substring(0,count);
+		if((count==0)||(len==0)) return "LESS";
+		else
+		{
+		str5=str5.toUpperCase();
+	    return str5;
+		}
