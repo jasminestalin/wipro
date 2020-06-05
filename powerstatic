@@ -1,0 +1,23 @@
+public class inherstatic {
+	public static void main(String[] args)
+	{
+		calculator obj= new calculator();
+				System.out.println("integer"+obj.powerInt(10,4));
+		System.out.println("Double"+obj.powerDouble(123, 23));
+	}
+
+}
+
+class calculator
+{
+	static double powerInt(int num1,int num2)
+			{
+		      double a=(double)num1;
+		      double b=(double)num2;
+		      return(Math.pow(a, b));
+			}
+	static double powerDouble(double num1,int num2)
+	{
+		return(Math.pow(num1,num2));
+	}
+}
