@@ -1,0 +1,28 @@
+public class basicbox {
+	
+
+public static void main(String[] args)
+{
+	Box b = new Box(10,20,30);
+	System.out.println(b.volume());
+}
+}
+	
+class Box
+{
+	int width;
+	int hei;
+	int depth;
+	Box(int wid,int heigth,int dep)
+	{
+		 width=wid;
+		 hei=heigth;
+		depth=dep;
+	
+    }
+	int volume()
+   {
+	int vol=width*hei*depth;
+	return vol;
+    }
+}
